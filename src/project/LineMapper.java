@@ -7,57 +7,44 @@ import java.nio.file.Paths;
 
 public class LineMapper {
 
-    // Read file into List<String>
-    public List<String> readFile(String path) throws Exception {
-        return Files.readAllLines(Paths.get(path));
+    public List<String> read(String p) throws Exception {
+        return Files.readAllLines(Paths.get(p));
     }
 
-    // Basic similarity score: count matching characters
-    private int similarity(String a, String b) {
-        int score = 0;
-        int min = Math.min(a.length(), b.length());
-
-        for (int i = 0; i < min; i++) {
-            if (a.charAt(i) == b.charAt(i)) {
-                score++;
-            }
+    private int sim(String a, String b) {
+        int c = 0;
+        int n = Math.min(a.length(), b.length());
+        for (int i = 0; i < n; i++) {
+            if (a.charAt(i) == b.charAt(i)) c++;
         }
-        return score;
+        return c;
     }
 
-    // Main mapping function
-    public List<LineMapping> mapLines(List<String> oldFile, List<String> newFile) {
-        List<LineMapping> mappings = new ArrayList<>();
+    public List<LineMapping> map(List<String> oldF, List<String> newF) {
+        List<LineMapping> out = new ArrayList<>();
+        boolean[] used = new boolean[newF.size()];
 
-        boolean[] used = new boolean[newFile.size()]; // tracks which lines are already mapped
+        for (int i = 0; i < oldF.size(); i++) {
+            String oldL = oldF.get(i);
+            int best = -1;
+            int bestS = 0;
 
-        for (int i = 0; i < oldFile.size(); i++) {
-            String oldLine = oldFile.get(i);
-
-            int bestMatch = -1;
-            int bestScore = 0;
-
-            // Look for closest matching line
-            for (int j = 0; j < newFile.size(); j++) {
+            for (int j = 0; j < newF.size(); j++) {
                 if (used[j]) continue;
-
-                int score = similarity(oldLine, newFile.get(j));
-
-                if (score > bestScore) {
-                    bestScore = score;
-                    bestMatch = j;
+                int s = sim(oldL, newF.get(j));
+                if (s > bestS) {
+                    bestS = s;
+                    best = j;
                 }
             }
 
-            // No match found → deleted
-            if (bestScore == 0) {
-                mappings.add(new LineMapping(i + 1, -1));
-            } else {
-                used[bestMatch] = true;
-                mappings.add(new LineMapping(i + 1, bestMatch + 1));
+            if (bestS == 0) out.add(new LineMapping(i + 1, -1));
+            else {
+                used[best] = true;
+                out.add(new LineMapping(i + 1, best + 1));
             }
         }
 
-        return mappings;
+        return out;
     }
 }

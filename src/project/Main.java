@@ -1,24 +1,34 @@
 package project;
 
 import java.util.List;
+import java.io.File;
 
 public class Main {
     public static void main(String[] args) throws Exception {
 
-        LineMapper mapper = new LineMapper();
+        LineMapper lm = new LineMapper();
+        File f = new File("eclipseTest");
+        File[] all = f.listFiles();
 
-        // Change these paths if needed
-        String oldFilePath = "old.txt";
-        String newFilePath = "new.txt";
+        for (File x : all) {
+            String n = x.getName();
+            if (n.endsWith("_1.java")) {
 
-        List<String> oldFile = mapper.readFile(oldFilePath);
-        List<String> newFile = mapper.readFile(newFilePath);
+                String o = "eclipseTest/" + n;
+                String w = "eclipseTest/" + n.replace("_1.java", "_2.java");
 
-        List<LineMapping> mappings = mapper.mapLines(oldFile, newFile);
+                File wFile = new File(w);
+                if (!wFile.exists()) continue;
 
-        System.out.println("Line Number Mappings:");
-        for (LineMapping m : mappings) {
-            System.out.println(m);
+                List<String> a = lm.read(o);
+                List<String> b = lm.read(w);
+
+                List<LineMapping> r = lm.map(a, b);
+
+                System.out.println(n);
+                for (LineMapping m : r) System.out.println(m);
+                System.out.println();
+            }
         }
     }
 }
