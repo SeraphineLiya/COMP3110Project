@@ -43,6 +43,3 @@ members worked in goal 1
 =>Anha Ashraf Liya (110154128) liya@uwindsor.ca
 =>
 
-Seraphine Liya
-
-Your partner’s name goes here
