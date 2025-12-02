@@ -14,9 +14,9 @@ The program automatically goes through every old file, finds its matching new fi
 Mapping Rule
 For each line in the old file:
 
-If it still exists in the new file → print oldLine -> newLine
+If it still exists in the new file -> print oldLine -> newLine
 
-If it was removed → print oldLine -> (deleted)
+If it was removed -> print oldLine -> (deleted)
 
 How to Run
 
@@ -25,7 +25,7 @@ Open the project in Eclipse.
 Open src/project/Main.java.
 
 Run the program using:
-Run → Run As → Java Application
+Run -> Run As -> Java Application
 
 Line mappings for all file pairs will appear in the console.
 
