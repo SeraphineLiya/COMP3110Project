@@ -39,5 +39,7 @@ src/LineMapping.java
 
 
 members worked in goal 1 
+
 =>Anha Ashraf Liya (110154128) liya@uwindsor.ca
+
 => Mahmood Hasan (110157161) hasan6d@uwindsor.ca
