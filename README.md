@@ -50,3 +50,10 @@ src/LineMapping.java
 => Jay Dodd (110108904) dodd9@uwindsor.ca
 
 <br>note : kindly add your partner name and the goals you did 
+
+
+
+<Design of how we would visually show line number mappings between old file and new file>
+Done By Team Member: Paramjit Kaur Sidhu
+Student ID: 110158683
+Email: sidhu5b@uwindsor.ca
