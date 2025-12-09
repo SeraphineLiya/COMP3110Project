@@ -68,7 +68,7 @@ Anha Ashraf Liya (110154128) – liya@uwindsor.ca
 
 Mahmood Hasan (110157161) – hasan6d@uwindsor.ca
 
-Sobaan Khan
+Sobaan Khan (110038342) - khan49@uwindsor.ca
 
 Jay Dodd (110108904) – dodd9@uwindsor.ca
 
