@@ -1,63 +1,75 @@
-# COMP3110Project
-A project from the University of Windsor
+COMP3110 Project – Line Mapping Tool
 
-<br>How It Works:
+This project implements a line-mapping tool that compares old and new versions of Java source files. The tool identifies which lines stayed the same, which lines changed, and which lines were deleted. An evaluator and dataset are included for verifying the accuracy of the mapping logic.
 
-All files are located in the eclipseTest folder.
+Project Overview
 
-Old files end with _1.java.
+All comparisons use the datasets inside the project folder:
 
-New files end with _2.java.
+Old files end with _1.java
 
-The program automatically goes through every old file, finds its matching new file, compares them, and prints the mapping.
+New files end with _2.java
 
-<br>Mapping Rules:
+The program automatically:
 
-For each line in the old file:
+Reads each old file
 
-If it still exists in the new file → print oldLine -> newLine
+Finds its matching new file
 
-If it was removed → print oldLine -> (deleted)
+Compares them line-by-line
 
-<br>How to Run:
+Prints all mappings to the console
+
+Saves results to output.txt
+
+A screenshot showing the accuracy and evaluation metrics has also been uploaded to the repository for reference.
+
+Files Included
+Source Code (src/project/)
+
+Main.java – Runs the line-mapping process
+
+LineMapper.java – Mapping logic
+
+LineMapping.java – Data structure for a mapping
+
+LineMapperEvaluator.java – Evaluation and accuracy reporting
+
+Datasets
+
+eclipseTest – Original dataset
+
+new dataset – Additional test files
+
+Other Files
+
+output.txt – Mapping results
+
+FinalProject.zip – Complete project upload
+
+Accuracy Screenshot – Shows evaluation summary and accuracy percentage
+
+How to Run
 
 Open the project in Eclipse.
 
-Open src/project/Main.java.
+To run the mapping tool:
+→ src/project/Main.java
+→ Run → Run As → Java Application
 
-Run the program using:
-Run → Run As → Java Application
+To run the evaluator:
+→ src/project/LineMapperEvaluator.java
 
-Line mappings for all file pairs will appear in the console.
+Results appear in the console and inside output.txt.
 
-<br>Files Included:
+Team Members
 
-src/Main.java
+Anha Ashraf Liya (110154128) – liya@uwindsor.ca
 
-src/LineMapper.java
+Mahmood Hasan (110157161) – hasan6d@uwindsor.ca
 
-src/LineMapping.java
+Sobaan Khan
 
+Jay Dodd (110108904) – dodd9@uwindsor.ca
 
-<br>Members that worked on goal 1:
-
-=> Anha Ashraf Liya (110154128) liya@uwindsor.ca ( Seraphine Liya )
-
-=> Mahmood Hasan (110157161) hasan6d@uwindsor.ca
-
-<br>Members that worked on goal 2:
-
-=> Jay Dodd (110108904) dodd9@uwindsor.ca
-
-
-
-<Design of how we would visually show line number mappings between old file and new file>
-Done By Team Member: Paramjit Kaur Sidhu
-Student ID: 110158683
-Email: sidhu5b@uwindsor.ca
-
-
-<br>note : kindly add your partner name and the goals you did 
-
-
-
+Paramjit Kaur Sidhu (110158683) – sidhu5b@uwindsor.ca
