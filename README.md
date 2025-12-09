@@ -27,15 +27,15 @@ A screenshot showing the accuracy and evaluation metrics has also been uploaded 
 Files Included
 Source Code (src/project/)
 
-Main.java – Runs the line-mapping process
+Main.java – Runs the line-mapping process 
 
-LineMapper.java – Mapping logic
+LineMapper.java – Mapping logic 
 
-LineMapping.java – Data structure for a mapping
+LineMapping.java – Data structure for a mapping 
 
-LineMapperEvaluator.java – Evaluation and accuracy reporting
+LineMapperEvaluator.java – Evaluation and accuracy reporting / sobaan created
 
-Datasets
+Datasets / sobaan created 7 data pairs
 
 eclipseTest – Original dataset
 
