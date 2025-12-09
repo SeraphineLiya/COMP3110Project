@@ -1,55 +1,59 @@
-COMP3110 Project – Line Mapping Tool
+# **COMP3110 Project – Line Mapping Tool**
 
-This project implements a line-mapping tool that compares old and new versions of Java source files. The tool identifies which lines stayed the same, which lines changed, and which lines were deleted. An evaluator and dataset are included for verifying the accuracy of the mapping logic.
+This project implements a line-mapping tool that compares old and new versions of Java source files. The tool identifies which lines stayed the same, which lines changed, and which lines were deleted. An evaluator and dataset are included for verifying the accuracy of the mapping logic.  
 
-Project Overview
+
+### <br>**Project Overview**
 
 All comparisons use the datasets inside the project folder:
 
-Old files end with _1.java
+- Old files end with _1.java
 
-New files end with _2.java
+- New files end with _2.java
 
 The program automatically:
 
-Reads each old file
+- Reads each old file
 
-Finds its matching new file
+- Finds its matching new file
 
-Compares them line-by-line
+- Compares them line-by-line
 
-Prints all mappings to the console
+- Prints all mappings to the console
 
-Saves results to output.txt
+- Saves results to output.txt
 
 A screenshot showing the accuracy and evaluation metrics has also been uploaded to the repository for reference.
 
-Files Included
+
+### <br>**Files Included**
+
 Source Code (src/project/)
 
-Main.java – Runs the line-mapping process 
+- Main.java – Runs the line-mapping process
 
-LineMapper.java – Mapping logic 
+- LineMapper.java – Mapping logic
 
-LineMapping.java – Data structure for a mapping 
+- LineMapping.java – Data structure for a mapping
 
-LineMapperEvaluator.java – Evaluation and accuracy reporting / sobaan created
+- LineMapperEvaluator.java – Evaluation and accuracy reporting
 
-Datasets / sobaan created 7 data pairs
+Datasets
 
-eclipseTest – Original dataset
+- eclipseTest – Original dataset
 
-new dataset – Additional test files
+- new dataset – Additional test files
 
 Other Files
 
-output.txt – Mapping results
+- output.txt – Mapping results
 
-FinalProject.zip – Complete project upload
+- FinalProject.zip – Complete project upload
 
-Accuracy Screenshot – Shows evaluation summary and accuracy percentage
+- Accuracy Screenshot – Shows evaluation summary and accuracy percentage
 
-How to Run
+
+### <br>**How to Run**
 
 Open the project in Eclipse.
 
@@ -62,14 +66,25 @@ To run the evaluator:
 
 Results appear in the console and inside output.txt.
 
-Team Members
+
+### <br>**Team Members**
+
+**Worked on Goal 1:**
 
 Anha Ashraf Liya (110154128) – liya@uwindsor.ca
 
 Mahmood Hasan (110157161) – hasan6d@uwindsor.ca
 
-Sobaan Khan (110038342) - khan49@uwindsor.ca
+<br>**Worked on Goal 2:**
+
+Sobaan Khan (110038342) – khan49@uwindsor.ca
 
 Jay Dodd (110108904) – dodd9@uwindsor.ca
 
+<br>**Worked on Goal 3:**
+
 Paramjit Kaur Sidhu (110158683) – sidhu5b@uwindsor.ca
+
+<br>**Worked on Goal 4:**
+
+Mahmood Hasan (110157161) – hasan6d@uwindsor.ca
