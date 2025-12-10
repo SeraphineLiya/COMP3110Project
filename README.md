@@ -85,6 +85,6 @@ Jay Dodd (110108904) – dodd9@uwindsor.ca
 
 Paramjit Kaur Sidhu (110158683) – sidhu5b@uwindsor.ca
 
-<br>**Worked on Goal 4:**
+<br>**Worked on Goal 1 and Goal 2 by combining them into a single working solution and worked on goal 4:**
 
 Mahmood Hasan (110157161) – hasan6d@uwindsor.ca
